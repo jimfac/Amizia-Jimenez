@@ -223,6 +223,15 @@ footer {
     background-color: white;
 
 }
+
+.animaciones-se:hover{
+    transform: scale(1.15);
+    transition-property: all;
+    transition-duration: 2s;
+    
+
+}
+
 /*QUIENES SOMOS*/
 
 
