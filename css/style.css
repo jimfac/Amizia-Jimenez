@@ -58,7 +58,7 @@ ul {
 
 section {
     text-align: center;
-    background-image:url("../assets/fondo\ institucional\ 1.jpg");
+    background-image:url("../assets/fondoinstitucional.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-color:white;
@@ -84,7 +84,9 @@ section {
     width: 250px;
     border:solid grey 2px;
     margin: 30px 20px 20px 20px;
- 
+    animation-name: aparecer; 
+    animation-duration: 10s;  
+    animation-iteration-count: infinite;
 }
 
 .lema {
@@ -143,9 +145,7 @@ footer {
     font-weight:bold;
     color:  rgb(1, 1, 12);
     text-align: center;
-    margin-top: 10px;
-   
-   
+    margin-top: 10px; 
 
 
 }
@@ -185,8 +185,24 @@ footer {
     form{
     width: 50%;
     height: 500px;
-    }         
+    }
+    .recuadro {
+        animation-name: aparecer; 
+        animation-duration: 10s;  
+        animation-iteration-count: infinite;
+    }      
     
+}
+
+/* ANIMACIONES */
+
+@keyframes aparecer{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 
@@ -227,8 +243,7 @@ footer {
 .animaciones-se:hover{
     transform: scale(1.15);
     transition-property: all;
-    transition-duration: 2s;
-    
+    transition-duration: 2s;   
 
 }
 
@@ -251,6 +266,9 @@ footer {
     width: 220px;
     border:solid grey 2px;
     text-align: center;
+    animation-name: aparecer; 
+    animation-duration: 10s;  
+    animation-iteration-count: infinite;
  }
 /* CONTACTANOS */
 
@@ -284,7 +302,7 @@ form {
 /* UBICACION */
 .section-ub{
     text-align: center;
-    background-image:url("../assets/fondo\ institucional\ 1.jpg");
+    background-image:url("../assets/fondoinstitucional.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-color:white;
